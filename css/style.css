@@ -95,6 +95,25 @@ a{
     left: 0;
 }
 
+.banner{
+    background-color: #102F50E5;
+}
+
+.banner img{
+    width: 100px;
+    border-radius: 10px;
+    box-shadow: 0 3px 5px #ddd;
+}
+
+.banner h2,
+.banner p{
+    color: aliceblue;
+}
+
+section{
+    padding: 50px 0;
+}
+
 @media (max-width: 768px){
     .mobile-menu{
         display: block;
