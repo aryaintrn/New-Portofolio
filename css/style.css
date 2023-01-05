@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    color: #333;
 }
 
 header{
@@ -97,21 +98,138 @@ a{
 
 .banner{
     background-color: #102F50E5;
+    padding: 150px 0;
 }
 
 .banner img{
     width: 100px;
     border-radius: 10px;
     box-shadow: 0 3px 5px #ddd;
+    margin-bottom: 10px;
 }
 
 .banner h2,
-.banner p{
+.banner p,
+.banner span{
     color: aliceblue;
+}
+
+.banner h2{
+    margin-bottom: 10px;
+}
+
+.banner p{
+    font-size: 18px;
 }
 
 section{
     padding: 50px 0;
+}
+
+.banner-left{
+    padding-left: 24px;
+}
+
+section h3{
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+section h3::before{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 120px;
+    height: 2px;
+    background-color: #ddd;
+    left: calc(50% - 60px);
+}
+
+section h3::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    width: 40px;
+    height: 4px;
+    background-color: #1b3d5b;
+    left: calc(50% - 20px);
+}
+
+#about p{
+    text-align: center;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+
+#skill{
+    background-color: rgba(0, 0, 0, 0.09);
+}
+
+#skill .bar{
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    margin: 5px 0 20px 0;
+}
+
+.bar .nilai-html{
+    height: 30px;
+    width: 20%;
+    background-color: #1f609a;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+
+.bar .nilai-lua{
+    height: 30px;
+    width: 80%;
+    background-color: #1f609a;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+
+.bar .nilai-css{
+    height: 30px;
+    width: 20%;
+    background-color: #1f609a;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+
+.bar .nilai-fg{
+    height: 30px;
+    width: 90%;
+    background-color: #1f609a;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+
+.bar .nilai-vg{
+    height: 30px;
+    width: 50%;
+    background-color: #1f609a;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+
+.col-4{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.col-4 img{
+    width: 100%;
 }
 
 @media (max-width: 768px){
